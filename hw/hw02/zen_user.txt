@@ -9,7 +9,7 @@ Explicit is better than implicit.
 Павло Кісера
 Станіслав Балущак
 11. Unless explicitly silenced.
-Діана Шиманська
+12. In the face of ambiguity, refuse the temptation to guess.
 Сусак Олександр
 Богдан Данилко
 Ілля Лосенко
