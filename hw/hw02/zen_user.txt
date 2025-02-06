@@ -1,7 +1,7 @@
 Андрій Килимник
 2. Explicit is better than implicit.
 Дмитро Манковський
-Марія Корженко
+4. Complex is better than complicated.
 Микола Островський
 Олександр Лівітчук
 Олександр Губський
