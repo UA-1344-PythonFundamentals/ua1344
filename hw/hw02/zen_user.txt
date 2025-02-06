@@ -1,5 +1,5 @@
 Андрій Килимник
-Explicit is better than implicit.
+2. Explicit is better than implicit.
 Дмитро Манковський
 Марія Корженко
 Микола Островський
