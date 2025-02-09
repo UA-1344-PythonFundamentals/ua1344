@@ -1,4 +1,4 @@
-Андрій Килимник
+1. Beautiful is better than ugly.
 2. Explicit is better than implicit.
 Дмитро Манковський
 4. Complex is better than complicated.
