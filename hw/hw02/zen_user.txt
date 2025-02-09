@@ -20,7 +20,6 @@
 Роман Крюковських
 21. Explicit is better than implicit.
 22. Simple is better than complex.
-Віталій Яцура
 Владислав Константінов
 Анна Хомин
 Денис Трофімов
