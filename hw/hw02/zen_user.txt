@@ -18,8 +18,9 @@
 18. If the implementation is easy to explain, it may be a good idea.
 Олена Мороз
 Роман Крюковських
-Сергій Кравченко
+21. Explicit is better than implicit.
 22. Simple is better than complex.
+Віталій Яцура
 Владислав Константінов
 Анна Хомин
 Денис Трофімов
