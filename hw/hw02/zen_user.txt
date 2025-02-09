@@ -2,7 +2,7 @@
 2. Explicit is better than implicit.
 Дмитро Манковський
 4. Complex is better than complicated.
-Микола Островський
+5. Flat is better than nested.
 Олександр Лівітчук
 Олександр Губський
 8.Special cases aren't special enough to break the rules.
