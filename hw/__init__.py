@@ -27,8 +27,8 @@ Functions:
 Usage:
     - Place all homework files in the `hw` directory under the current working directory.
     - Ensure the directory structure follows the pattern `<root>/hw/<task>/<author>/`.
-    - Run the script using the command: `python __init__.py` to generate a color-coded report showing completed and 
-      missing homework tasks.
+    - Run the script using the command: `python __init__.py` to generate a color-coded report
+      showing completed and missing homework tasks.
 
 Dependencies:
     - Requires Python 3.6 or higher.
@@ -130,12 +130,13 @@ def print_homework_status(homework_data: Dict[str, List[str]]) -> None:
         print(f"{author:<{author_column_width}} | {' '.join(task_statuses)}")
 
 
-hw_dir = Path(os.getcwd()) / "hw"
+
 
 def main():
     """
     Main function to execute the script logic.
     """
+    hw_dir = Path(os.getcwd()) / "hw"
     try:
         homework_data = gather_homework_data(hw_dir)
         print_homework_status(homework_data)
