@@ -4,7 +4,7 @@
 4. Complex is better than complicated.
 5. Flat is better than nested.
 Олександр Лівітчук
-Олександр Губський
+7. Readability counts.
 8.Special cases aren't special enough to break the rules.
 Павло Кісера
 Станіслав Балущак
