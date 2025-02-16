@@ -41,7 +41,7 @@ for d in num_str:
 print(f'Product of digits of the number {num} is {product}\n')
 
 # 2.2 Write the number in reverse order.
-reversed_str = ''.join(reversed(num_str))
+reversed_str = ''.join(num_str[::-1])
 print(f'Reverse order of the number {num} is {reversed_str}\n')
 
 # 2.3 Sort the digits of the number in ascending order.
