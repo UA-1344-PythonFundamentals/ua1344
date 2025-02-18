@@ -22,5 +22,5 @@
 22. Simple is better than complex.
 Владислав Константінов
 Анна Хомин
-Денис Трофімов
+25. Sparse is better than dense.
 27.Readability counts.
