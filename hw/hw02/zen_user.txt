@@ -21,6 +21,6 @@
 21. Explicit is better than implicit.
 22. Simple is better than complex.
 Владислав Константінов
-Анна Хомин
+24. Flat is better than nested.
 25. Sparse is better than dense.
 27.Readability counts.
