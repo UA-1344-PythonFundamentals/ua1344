@@ -1,4 +1,4 @@
-1. Beautiful is better than ugly.
+philosophy_python = """1. Beautiful is better than ugly.
 2. Explicit is better than implicit.
 3. Simple is better than complex.
 4. Complex is better than complicated.
@@ -24,6 +24,17 @@
 24. Flat is better than nested.
 25. Sparse is better than dense.
 26. Readability counts.
-27.Special cases aren't special enough to break the rules.
-28.Although practicality beats purity.
-29.Errors should never pass silently.
+27. Special cases aren't special enough to break the rules.
+28. Although practicality beats purity.
+29. Errors should never pass silently."""
+
+print(type(philosophy_python))
+
+print(philosophy_python.count('better'))
+print(philosophy_python.count('never'))
+print(philosophy_python.count('is'))
+
+print(philosophy_python.upper())
+
+print(philosophy_python.replace('i', '&'))
+
