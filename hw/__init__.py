@@ -48,6 +48,38 @@ import os
 from pathlib import Path
 from typing import List, Dict
 
+AUTHORS = {
+    "Rosgard-ua": "Pavlo Kisera",
+    "olena-moroz": "Olena Moroz",
+    "anna-khomyn": "Anna Khomyn",
+    "vladimon5": "Dmytro Vlasenko",
+    "Jatcura": "Vitalii Yatsura",
+    "MariiaHaluza": "Mariia Haluza",
+    "Violener": "Denys Trofimov",
+    "GigachadVladyslav": "Vlad Konstantinov",
+    "dangerOlaf": "Mykola Ostrovskyi",
+    "susakom": "Susak Oleksandr",
+    "alejandro-livitchadze": "Oleksandr Litivchuk",
+    "theneonwhale": "Andrii Kylymnyk",
+    "DmytroMankovskyi": "Dmytro Mankovskyi",
+    "vasylplaksiy": "Vasyl Plaksiy",
+    "agubskiy": "Oleksandr Hubskyi",
+    "kryuk-nau": "KRIUKOVSKYKH ROMAN",
+    "pavlonaichuk": "Pavlo Naichuk",
+    "Pavel6331": "Pavel Konelskij",
+    "Pavlo_Konelskiy": "Pavel Konelskij",
+    "Nala-li": "Nataliia Pobozhenska",
+    "SerhiiKravchenkoua": "Sergey Kravchenko",
+    "dianajnxv": "Diana Shymanska",
+    "malyyboh": "Bohdan Danylko",
+    "Mariya11Korzhenko": "Mariya Korzhenko",
+    "killyat": "Balushchak Stanislav",
+
+
+    "1" : "-> Repetskyi Maksym",
+    "2" : "-> Diana Vorona",
+    "4" : "-> Illya Losenko",
+}
 
 class BColors:
     """Provides ANSI escape sequences for colored terminal output."""
@@ -127,9 +159,8 @@ def print_homework_status(homework_data: Dict[str, List[str]]) -> None:
     print("-" * (author_column_width + 52))
     for author, tasks in homework_data.items():
         task_statuses = check_task(tasks)
-        print(f"{author:<{author_column_width}} | {' '.join(task_statuses)}")
-
-
+        # if "hw05" in tasks:
+        print(f"{AUTHORS.get(author, author):<{author_column_width}} | {' '.join(task_statuses)}")
 
 
 def main():
