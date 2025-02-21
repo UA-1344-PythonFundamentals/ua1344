@@ -4,13 +4,13 @@
 4. Complex is better than complicated.
 5. Flat is better than nested.
 Олександр Лівітчук
-Олександр Губський
+7. Readability counts.
 8.Special cases aren't special enough to break the rules.
-Павло Кісера
+9. Although practicality beats purity.
 Станіслав Балущак
 11. Unless explicitly silenced.
 12. In the face of ambiguity, refuse the temptation to guess.
-Сусак Олександр
+13. There should be one-- and preferably only one --obvious way to do it.
 14. Although that way may not be obvious at first unless you're Dutch.
 Ілля Лосенко
 Максим Репецький
