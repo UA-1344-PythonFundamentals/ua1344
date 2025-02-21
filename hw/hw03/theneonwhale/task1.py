@@ -1,3 +1,4 @@
+philosophy = """
 1. Beautiful is better than ugly.
 2. Explicit is better than implicit.
 3. Simple is better than complex.
@@ -17,13 +18,25 @@
 17. If the implementation is hard to explain, it's a bad idea.
 18. If the implementation is easy to explain, it may be a good idea.
 19. Namespaces are one honking great idea -- let's do more of those!
-20. Beautiful is better than ugly.
-21. Explicit is better than implicit.
-22. Simple is better than complex.
-23. Complex is better than complicated.
-24. Flat is better than nested.
-25. Sparse is better than dense.
-26. Readability counts.
-27.Special cases aren't special enough to break the rules.
-28.Although practicality beats purity.
-29.Errors should never pass silently.
+"""
+
+
+count_better = philosophy.lower().count("better")
+count_never = philosophy.lower().count("never")
+count_is = philosophy.lower().count("is")
+
+print(f"Occurrences of 'better': {count_better}")
+print(f"Occurrences of 'never': {count_never}")
+print(f"Occurrences of 'is': {count_is}")
+
+
+upper_case_text = philosophy.upper()
+
+print("\nText in Uppercase:\n")
+print(upper_case_text)
+
+
+modified_text = philosophy.replace("i", "&")
+
+print("\nText with 'i' replaced by '&':\n")
+print(modified_text)

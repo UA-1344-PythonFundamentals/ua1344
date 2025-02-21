@@ -1,0 +1,9 @@
+temp_C = float(input("Enter a temperature in Celsius: "))
+temp_F = (temp_C * 9/5) + 32
+
+if temp_C >= -273.15:
+    print("Equivalent", temp_F, "to Fahrenheit")
+else:
+    print("Error. Temperature below absolute zero")
+
+
