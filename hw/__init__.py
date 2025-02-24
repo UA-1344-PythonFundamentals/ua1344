@@ -57,6 +57,7 @@ AUTHORS = {
     "MariiaHaluza": "Mariia Haluza",
     "Violener": "Denys Trofimov",
     "GigachadVladyslav": "Vlad Konstantinov",
+    "vlad_konstantinov": "Vlad Konstantinov",
     "dangerOlaf": "Mykola Ostrovskyi",
     "susakom": "Susak Oleksandr",
     "alejandro-livitchadze": "Oleksandr Litivchuk",
