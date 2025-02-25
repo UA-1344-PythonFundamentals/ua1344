@@ -1,4 +1,8 @@
 def check_divide(range):
+    """
+    fizzbuzz :)
+    """
+
     divided_by_2 = []
     divided_by_3 = []
     not_divided_by_2_and_3 = []
