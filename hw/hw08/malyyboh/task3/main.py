@@ -1,5 +1,4 @@
 import func_module
-from math import pi, pow
 
 user_input = input(
     "Program for calculating the area of figures. \nto calculate the area of a rectangle, enter: rectangle \nto calculate the area of a triangle, enter: triangle \nto calculate the area of a circle, enter: circle \nPlease enter the figure: "
@@ -15,5 +14,4 @@ elif user_input == "triangle":
     print(func_module.calculate_area_triangle(base, height))
 elif user_input == "circle":
     radius = int(input("Enter the radius: "))
-    pow_r = pow(radius, 2)
-    print(func_module.calculate_area_circle(radius, pi, pow_r))
+    print(func_module.calculate_area_circle(radius))
