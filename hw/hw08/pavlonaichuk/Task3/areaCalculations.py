@@ -1,10 +1,10 @@
 import math
 
-def rectangle_area(a, b):
+def rectangleArea(a, b):
     return a * b
 
-def triangle_area(h, a):
+def triangleArea(h, a):
     return 0.5 * h * a
 
-def circle_area(r):
+def circleArea(r):
     return math.pi * math.pow(r, 2)

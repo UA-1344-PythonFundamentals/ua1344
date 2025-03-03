@@ -1,6 +1,6 @@
 import re
 
-def check_password_validity(password):
+def checkPasswordValidity(password):
     if (6 <= len(password) <= 16 and
         re.search(r"[a-z]", password) and
         re.search(r"[A-Z]", password) and
@@ -13,4 +13,4 @@ def check_password_validity(password):
 # Example usage:
 if __name__ == "__main__":
     password = input("Enter your password: ")
-    print(check_password_validity(password))
+    print(checkPasswordValidity(password))
