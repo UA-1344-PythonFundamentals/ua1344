@@ -47,6 +47,7 @@ Example Output:
 import os
 from pathlib import Path
 from typing import List, Dict
+from collections import defaultdict
 
 AUTHORS = {
     "Rosgard-ua": "-> Pavlo Kisera",
@@ -54,6 +55,7 @@ AUTHORS = {
     "anna-khomyn": "-> Anna Khomyn",
     "vladimon5": "-> Dmytro Vlasenko",
     "Jatcura": "-> Vitalii Yatsura",
+    "yatsura_vitalii": "-> Vitalii Yatsura",
     "MariiaHaluza": "-> Mariia Haluza",
     "Violener": "-> Denys Trofimov",
     "GigachadVladyslav": "-> Vlad Konstantinov",
@@ -75,9 +77,9 @@ AUTHORS = {
     "malyyboh": "-> Bohdan Danylko",
     "Mariya11Korzhenko": "-> Mariya Korzhenko",
     "killyat": "-> Balushchak Stanislav",
+    "maksimrep" : "-> Repetskyi Maksym",
 
 
-    "1" : "-> Repetskyi Maksym",
     "2" : "-> Diana Vorona",
     "4" : "-> Illya Losenko",
 }
@@ -127,25 +129,28 @@ def gather_homework_data(hw_dir: Path) -> Dict[str, List[str]]:
 
     Returns:
         Dict[str, List[str]]: Dictionary where keys are authors and values
-                              are lists of completed tasks.
+                                are lists of completed tasks.
     """
-    homework_data = {}
     if not hw_dir.exists() or not hw_dir.is_dir():
         raise FileNotFoundError(
             f"The directory {hw_dir} does not exist or is not a directory."
         )
 
-    for root, _, _ in os.walk(hw_dir):
-        path_parts = Path(root).parts
-        if len(path_parts) >= 7:  # Ensure the directory structure is deep enough
-            author = path_parts[-1]
-            task = path_parts[-2]
-            if author in homework_data:
-                homework_data[author].append(task)
-            else:
-                homework_data[author] = [task]
+    homework_data = defaultdict(list)
 
-    return homework_data
+    for item in hw_dir.rglob("*"): 
+        if item.is_dir() and item != hw_dir:
+            try:
+                relative_path = item.relative_to(hw_dir)
+                path_parts = relative_path.parts
+                if len(path_parts) >= 2:
+                    task = path_parts[0]
+                    author = path_parts[1]
+                    homework_data[author].append(task)
+            except ValueError:
+                print(f"Skipping {item} due to ValueError.")
+                
+    return dict(homework_data)
 
 
 def print_homework_status(homework_data: Dict[str, List[str]]) -> None:
@@ -160,7 +165,6 @@ def print_homework_status(homework_data: Dict[str, List[str]]) -> None:
     print("-" * (author_column_width + 52))
     for author, tasks in homework_data.items():
         task_statuses = check_task(tasks)
-        # if "hw05" in tasks:
         print(f"{AUTHORS.get(author, author):<{author_column_width}} | {' '.join(task_statuses)}")
 
 
