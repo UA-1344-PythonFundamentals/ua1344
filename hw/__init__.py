@@ -167,7 +167,6 @@ def print_homework_status(homework_data: Dict[str, List[str]]) -> None:
         task_statuses = check_task(tasks)
         print(f"{AUTHORS.get(author, author):<{author_column_width}} | {' '.join(task_statuses)}")
 
-
 def print_homework_status_md(homework_data: Dict[str, List[str]]) -> None:
     """
     Prints the homework status for each author in a Markdown table.
@@ -175,12 +174,12 @@ def print_homework_status_md(homework_data: Dict[str, List[str]]) -> None:
     Args:
         homework_data (Dict[str, List[str]]): Dictionary containing homework data.
     """
-    file = open("homework_status.md", "w")
-    print("| Author | Tasks |", file=file)
-    print("|--------|-------|", file=file)
-    for author, tasks in homework_data.items():
-        task_statuses = check_task(tasks) # Припустимо, що check_task повертає список статусів
-        print(f"| {AUTHORS.get(author, author)} | {' '.join(task_statuses)} |", file=file)
+    with open("homework_status.md", "w") as file:
+        print("| Author | Tasks |", file=file)
+        print("|--------|-------|", file=file)
+        for author, tasks in homework_data.items():
+            task_statuses = check_task(tasks)
+            print(f"| {AUTHORS.get(author, author)} | {' '.join(task_statuses)} |", file=file)
 
 
 def main():
@@ -191,8 +190,7 @@ def main():
     try:
         homework_data = gather_homework_data(hw_dir)
         print_homework_status(homework_data)
-        print_homework_status_md(homework_data)
-    except FileNotFoundError as e:
+        # print_homework_status_md(homework_data)
         print(f"{BColors.FAIL}{e}{BColors.ENDC}")
 
 
