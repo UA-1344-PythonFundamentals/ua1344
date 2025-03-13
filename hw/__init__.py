@@ -143,7 +143,7 @@ def gather_homework_data(hw_dir: Path) -> Dict[str, List[str]]:
             try:
                 relative_path = item.relative_to(hw_dir)
                 path_parts = relative_path.parts
-                if len(path_parts) >= 2:
+                if len(path_parts) >= 2 and path_parts[1] != "__pycache__":
                     task = path_parts[0]
                     author = path_parts[1]
                     homework_data[author].append(task)
