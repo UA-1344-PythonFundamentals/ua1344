@@ -16,7 +16,7 @@
 Максим Репецький
 Марія Галюза
 18. If the implementation is easy to explain, it may be a good idea.
-Олена Мороз
+19. Namespaces are one honking great idea -- let's do more of those!
 20. Beautiful is better than ugly.
 21. Explicit is better than implicit.
 22. Simple is better than complex.
