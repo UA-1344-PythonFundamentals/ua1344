@@ -51,6 +51,7 @@ from collections import defaultdict
 
 AUTHORS = {
     "Rosgard-ua": "-> Pavlo Kisera",
+    "OlenaMoroz": "-> Olena Moroz",
     "olena-moroz": "-> Olena Moroz",
     "anna-khomyn": "-> Anna Khomyn",
     "vladimon5": "-> Dmytro Vlasenko",
@@ -187,11 +188,11 @@ def main():
     Main function to execute the script logic.
     """
     hw_dir = Path(os.getcwd()) / "hw"
-    try:
-        homework_data = gather_homework_data(hw_dir)
-        print_homework_status(homework_data)
-        # print_homework_status_md(homework_data)
-        print(f"{BColors.FAIL}{e}{BColors.ENDC}")
+    
+    homework_data = gather_homework_data(hw_dir)
+    print_homework_status(homework_data)
+    # print_homework_status_md(homework_data)
+    # print(f"{BColors.FAIL}{e}{BColors.ENDC}")
 
 
 if __name__ == "__main__":
