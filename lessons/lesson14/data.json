@@ -1,0 +1,6 @@
+{
+  "name": "Liubov",
+  "age": 35,
+  "city": "Lviv",
+  "children": [{ "name": "Maksym", "age": 6 }]
+}
