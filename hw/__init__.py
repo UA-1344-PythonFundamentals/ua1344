@@ -110,7 +110,7 @@ def check_task(tasks: List[str]) -> List[str]:
     Returns:
         List[str]: List of formatted task statuses.
     """
-    all_tasks = [f"hw{str(i).zfill(2)}" for i in range(2, 12)]
+    all_tasks = [f"hw{str(i).zfill(2)}" for i in range(2, 15)]
     return [
         (
             f"{BColors.OKGREEN}{task}{BColors.ENDC}"
