@@ -75,7 +75,7 @@ AUTHORS = {
     "Nala-li": "-> Nataliia Pobozhenska",
     "SerhiiKravchenkoua": "-> Sergey Kravchenko",
     "dianajnxv": "-> Diana Shymanska",
-    "malyyboh": "-> Bohdan Danylko",
+    "malyyboh": "->??? Bohdan Danylko",
     "Mariya11Korzhenko": "-> Mariya Korzhenko",
     "killyat": "-> Balushchak Stanislav",
     "maksimrep" : "-> Repetskyi Maksym",
