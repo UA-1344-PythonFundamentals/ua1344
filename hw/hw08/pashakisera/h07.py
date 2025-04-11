@@ -36,27 +36,25 @@ def read_inputs():
         intered_width = float(input("Please enter width: "))
         print(area(intered_figure, intered_length, intered_width))
     if intered_figure == "triangle":
-        import re
+        intered_height = float(input("Please enter height: "))
+        intered_base = float(input("Please enter base: "))
+        print(area(intered_figure, intered_height, intered_base))
+    if intered_figure == "circle":
+        intered_radius = float(input("Please enter radius: "))
+        print(area(intered_figure, intered_radius))
 
-        def проверка_пароля(пароль):
-            """
-            Функция для проверки действительности пароля с использованием регулярого выражения.
 
-            Параметры:
-            пароль (str): Строка с паролем
+read_inputs()
 
-            Возвращает:
-            bool: True или False.
-            """
+#Write a function that calculates the number of characters included in given string
+#• input: "hello"
+#• output: {"h":1, "e": 1, "I":2,"0":1}
 
-            шаблон = r'^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$#@]).{6,16}$'
+def count_str(str_to_calc):
+    res = {}
+    for i in set(str_to_calc):
+        res[i] = str_to_calc.count(i)
+    print(res)
 
-            if re.match(шаблон, пароль):
-                print("Пароль действителен.")
-            else:
-                print("Пароль недействителен.")
-
-        # Пример использования
-        пароль = input("Введите пароль для проверки: ")
-
-        проверка_пароля(пароль)
+count_str("hello")
+count_str("Python is awesome")
